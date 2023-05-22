@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    padding: 2.5%;
+    background-color: #E5E5E5;
+}
+header{
+    text-align: center;
+}
+h1 a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    "ct ct ct at"
+    "ct ct ct at"
+    "ct ct ct ar"
+    "ct ct ct ar"
+    "ct ct ct ar"
+    "ct ct ct ew"
+    "ct ct ct ew"
+    ;
+    gap: 10px;
+}
+.content{
+    grid-area: ct;
+    background-color: aqua;
+    /* border: 1px solid black; */
+}
+.about{
+    grid-area: at;
+    background-color: aqua;
+    /* border: 1px solid black; */
+}
+.archives{
+    grid-area: ar;
+    background-color: aqua;
+    /* border: 1px solid black; */
+}
+.elsewhere{
+    grid-area: ew;
+    background-color: aqua;
+    /* border: 1px solid black; */
+}
